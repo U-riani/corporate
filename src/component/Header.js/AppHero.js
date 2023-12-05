@@ -28,13 +28,13 @@ const heroData = [
 function AppHero() {
   return (
     <section id="home" className="hero-block">
-       <Carousel>
+       <Carousel className='mx-2'>
           {
             heroData.map((hero) => {
               return (
-                <Carousel.Item key={hero.id}>
+                <Carousel.Item key={hero.id} className='carules-inner'>
                   <img
-                    className="d-block w-100"
+                    className="d-block w-100 h-100 app-hero-image"
                     src={hero.image}
                     alt={"slide " + hero.id}
                   />
